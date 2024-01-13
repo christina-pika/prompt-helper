@@ -1,5 +1,6 @@
 import openai
 import os
+import streamlit as st
 import time
 import requests
 from datetime import datetime
@@ -7,9 +8,12 @@ from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI # pip install openai --upgrade
 
 _ = load_dotenv(find_dotenv())
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-client = openai.OpenAI(api_key=openai.api_key)
+load_dotenv('.env')
+openai.api_key = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+
+client = openai.OpenAI(
+    api_key=openai.api_key,
+)
 
 with open('instruction_mj.txt', 'r') as file:
     text_from_file = file.read().strip()
