@@ -9,7 +9,7 @@ from openai import OpenAI # pip install openai --upgrade
 _ = load_dotenv(find_dotenv())
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
-client = OpenAI()
+client = openai.OpenAI()
 
 with open('instruction_mj.txt', 'r') as file:
     text_from_file = file.read().strip()
