@@ -13,9 +13,6 @@ client = OpenAI()
 with open('instruction_mj.txt', 'r') as file:
     text_from_file = file.read().strip()
 
-openai.api_key = os.getenv('OPENAI_API_KEY')
-
-client = OpenAI()
 
 original_prompt = 'ERROR!'
 
