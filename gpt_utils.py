@@ -8,7 +8,7 @@ from openai import OpenAI # pip install openai --upgrade
 with open('instruction_mj.txt', 'r') as file:
     text_from_file = file.read().strip()
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='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')
 
 original_prompt = 'cinematic, a girl with a small parrot on her shoulder, in the city, 3D animation'
 
