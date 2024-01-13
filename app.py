@@ -15,7 +15,6 @@ load_dotenv()
 
 # Get API key from environment variable
 openai_api_key = os.getenv('OPENAI_API_KEY')
-openai_api_key = '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'
 
 # Streamlit page configuration
 st.set_page_config(

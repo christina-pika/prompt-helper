@@ -3,13 +3,19 @@ import os
 import time
 import requests
 from datetime import datetime
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI # pip install openai --upgrade
+
+_ = load_dotenv(find_dotenv())
+openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI()
 
 with open('instruction_mj.txt', 'r') as file:
     text_from_file = file.read().strip()
 
-client = OpenAI(api_key='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')
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
+client = OpenAI()
 
 original_prompt = 'ERROR!'
 
