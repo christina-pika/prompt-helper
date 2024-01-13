@@ -1,6 +1,7 @@
 import openai
 import os
 import time
+import requests
 from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI # pip install openai --upgrade
@@ -8,9 +9,9 @@ from openai import OpenAI # pip install openai --upgrade
 with open('instruction_mj.txt', 'r') as file:
     text_from_file = file.read().strip()
 
-client = OpenAI(api_key='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')
+client = OpenAI(api_key='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')
 
-original_prompt = 'cinematic, a girl with a small parrot on her shoulder, in the city, 3D animation'
+original_prompt = 'ERROR!'
 
 styles = {"3d animation", "anime","animation", "cinematic", "film", "lego", "makoto shinkai", "pixel"}
 
@@ -22,14 +23,17 @@ def generate_prompt(ref_obj, instruction):
             {"role": "user", "content": f"{instruction} . Here's the input. {ref_obj} ->"},
           ]
         )
+    except requests.RequestException as e:
+    # Handle network-related errors
+        print(f"Network error: {e}")
+    except Exception as e:
+    # Handle other unexpected errors
+        print(f"Unexpected error: {e}")
     except:
-        return original_prompt
+        return "ERROR!!!"
     # except OpenAIError as e:
     # # Handle specific OpenAI-related errors
-    # except requests.RequestException as e:
-    # # Handle network-related errors
-    # except Exception as e:
-    # # Handle other unexpected errors
+    #     print(f"OpenAI error: {e}")
 
     return response.choices[0].message.content ### [:-1]
     # probably need streaming at "inspire me"? or never need?

@@ -30,7 +30,7 @@ st.set_page_config(
 )
 
 # Title
-st.markdown("<h1 style='text-align: center;'>Prompt Helper</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>3.5 Prompt Helper</h1>", unsafe_allow_html=True)
 st.markdown("""
     <style>
     .inputbox {
