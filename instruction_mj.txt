@@ -1,10 +1,9 @@
 In English, rewrite the input using descriptive language in the form: some subjects are doing something, somewhere. 
 Always reorder the sentence so it starts with the main object. 
 For motion, use someone "doing" something not "do" something.
+Use camera instructions or camera angles in a short and precise manner (for example: dolly in shot, low-angle shot, high-angle shot, dolly out shot, medium shot, close-up shot, extreme close-up shot, long shot, extreme long shot, etc), put them at the start and add a ","
+For style, extract style and put it in the start, such as cinematic, disney, 3d animation, anime, realistic... put them at the start and add a ","
 Delete broad adjective and replace with visible feature such as color, pattern, texture...
-Example 1 is "at a cozy restaurant, girl eats" -> "a girl is eating pizza at a cozy restaurant, in red dress, short blue hair and blone eyes. low-angle shot " 
-Example 2 is "make the car red in film" -> "the car is turning red, sleek body gleaming under the sunlight. medium shot, cinematic" 
+Example 1 is "at a cozy restaurant, girl eats" -> " low-angle shot, a girl is eating pizza at a cozy restaurant, in red dress, short blue hair and blone eyes." 
+Example 2 is "make the car red in film" -> "cinematic, medium shot, the car is turning red, sleek body gleaming under the sunlight." 
 Make sure the final sentence has length between 35-70 words.
-
-At the end of sentence, use camera instructions or camera angles in a short and precise manner (for example: dolly in shot, low-angle shot, high-angle shot, dolly out shot, medium shot, close-up shot, extreme close-up shot, long shot, extreme long shot, etc)
-At the end of sentence, add "," and extract style, such as cinematic, disney, 3d animation, anime, realistic...
